@@ -6,7 +6,7 @@
 
 > A curated directory of every connector available across [Lovable's](https://lovable.dev) two integration surfaces — **App Connectors** (services your built apps can read from and act on) and **Chat Connectors** (MCP servers that add context while you build).
 
-**Last updated:** May 10, 2026 · **App Connectors:** 47 · **Chat Connectors:** 16 · **Categories:** 27 · **Version:** [1.0.0](CHANGELOG.md)
+**Last updated:** May 10, 2026 · **App Connectors:** 47 · **Chat Connectors:** 16 · **Categories:** 27 · **Version:** [1.0.1](CHANGELOG.md)
 
 ---
 
@@ -34,7 +34,38 @@ If a connector has neither marker, it is available in the standard surface and l
 
 ---
 
+## Stack Recipes
+
+Curated combinations that solve common Lovable build patterns. Each recipe is a battle-tested pairing — picking from one column in each category gets you a working app instead of a feature graveyard.
+
+### App Connector recipes
+
+- **SaaS Starter** — `⚡ Cloud` + `⚡ Stripe` + `Resend` + `Slack` — Auth + billing + transactional email + team notifications. The default starting point for any subscription app.
+- **BYO Backend SaaS** — `⚡ Supabase` + `⚡ Stripe` + `Resend` + `Inngest` — When you need RLS, real-time, or your own Postgres. Inngest handles the long-running webhook + scheduled jobs the marketing site shouldn't block on.
+- **Headless Ecommerce** — `⚡ Shopify` + `Storyblok` + `Resend` — Shopify owns commerce, Storyblok owns content, Resend handles order/shipping mail. Lovable owns the storefront.
+- **Internal Operations Tool** — `⚡ Supabase` + `Linear` + `Slack` + `Inngest` — Read-write internal dashboards that talk to engineering systems. Linear for tickets, Slack for team comms, Inngest for any scheduled syncing.
+- **AI Agent App** — `⚡ AI` (or `⚡ Cloud` + Anthropic/OpenAI key) + `Perplexity` + `ElevenLabs` + `⚡ Supabase` — LLM reasoning + grounded web search + voice output + persistent memory. The four pillars of a polished consumer agent.
+- **Microsoft 365 Power User Tool** — `Microsoft Outlook` + `Microsoft Excel` + `Microsoft OneDrive` + `Microsoft Teams` — When the deployment context is "everything has to live in our M365 tenant."
+- **Privacy-First Closed Stack** — `⚡ Cloud` + `⚡ AI` — No third-party connector configuration. Useful for first-version internal tools where you haven't decided which external services are in scope yet.
+- **Sales-Ops Dashboard** — `HubSpot` + `Attention` + `Slack` + `⚡ Supabase` — CRM data + call-coaching transcripts + alerts + custom rollups beyond what HubSpot's UI gives you.
+- **Content + Comms Marketing Site** — `Contentful` + `Resend` + `Google Calendar` — Editor-friendly CMS, transactional email, and scheduled events without standing up four separate vendors.
+
+### Chat Connector recipes (build-time MCP)
+
+- **Engineering Build Session** — `Linear` + `Sentry` + `Figma` — Read your actual ticket, see the actual error, see the actual design, write the actual code. The default "I'm building a real feature" stack.
+- **Product-Decision Build Session** — `PostHog` + `Notion` + `Linear` — Ground UI choices in real funnel data, pull the PRD live from Notion, scope against the ticket. Closes the gap between strategy and shipping.
+- **Design-System-Driven Build** — `Figma` + `Sanity` — Components materialize from real Figma layers, populated with real Sanity content schemas. The generated UI matches both the design and the data shape on first pass.
+- **Customer-Voice Build** — `Granola` + `Linear` + `Notion` — What the customer actually said in the call, what the team committed to in Linear, what the spec already says in Notion. The triangle that prevents shipping the wrong feature.
+
+> Stack Recipes are opinion, not Lovable's recommendation. Mix and match — every connector listed below works with every other listed connector.
+
+---
+
 ## Contents
+
+### Quick reference
+
+- [Stack Recipes](#stack-recipes)
 
 ### App Connectors
 
