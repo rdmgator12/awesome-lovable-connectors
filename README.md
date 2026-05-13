@@ -6,69 +6,22 @@
 
 > A curated directory of every connector available across [Lovable's](https://lovable.dev) two integration surfaces — **App Connectors** (services your built apps can read from and act on) and **Chat Connectors** (MCP servers that add context while you build).
 
-**Last updated:** May 10, 2026 · **App Connectors:** 47 · **Chat Connectors:** 16 · **Categories:** 27 · **Version:** [1.0.1](CHANGELOG.md)
+**Last updated:** May 10, 2026 · **App Connectors:** 47 · **Chat Connectors:** 16 · **Categories:** 27 · **Version:** 1.0.1
 
----
+Lovable exposes integrations through two distinct surfaces. **App Connectors** are workspace-scoped integrations that your generated app can call at runtime — configured once by workspace admins, available to any app built in the workspace, powering backend, payments, email, file storage, CRM, analytics, and more. **Chat Connectors** are MCP (Model Context Protocol) servers attached to *your* build session, not the app you ship — they give Lovable's chat surface live context from product analytics, design files, error trackers, project management, and feature-flag platforms while you iterate.
 
-## About
+This list tracks both surfaces as visible in the Lovable in-product directory on the **Last updated** date. Lovable also supports custom MCP servers — the chat surface includes a "New MCP server" entry for connecting your own. For more information, see the [Lovable documentation](https://docs.lovable.dev).
 
-Lovable exposes integrations through two distinct surfaces:
-
-- **App Connectors** — workspace-scoped integrations that your generated app can call at runtime. Configured once by workspace admins; available to any app built in the workspace. Powers backend, payments, email, file storage, CRM, analytics, and more.
-- **Chat Connectors** — MCP (Model Context Protocol) servers attached to *your* build session, not the app you ship. Give Lovable's chat surface live context from product analytics, design files, error trackers, project management, and feature-flag platforms while you iterate. Personal — only available to you.
-
-This list tracks both surfaces as visible in the Lovable in-product directory on the **Last updated** date. Lovable also supports custom MCP servers — the chat surface includes a "New MCP server" entry for connecting your own.
-
-For more information, see the [Lovable documentation](https://docs.lovable.dev) and the [Lovable homepage](https://lovable.dev).
+**Legend:** ⚡ Enabled by default in new Lovable workspaces · 🔜 Marked **Soon** in the Lovable directory. Connectors with neither marker are available in the standard surface and link to the third-party vendor's homepage.
 
 > This is an independent, community-maintained list. Not affiliated with, endorsed by, or sponsored by Lovable. "Lovable" and related marks are the property of their respective owner. Each connector is the property of its respective owner.
 
 ---
 
-## Legend
-
-- ⚡ — Enabled by default in new Lovable workspaces (built-in backend, AI, or pre-integrated template)
-- 🔜 — Marked **Soon** in the Lovable directory; not yet generally available
-
-If a connector has neither marker, it is available in the standard surface and links to the third-party vendor's homepage.
-
----
-
-## Stack Recipes
-
-Curated combinations that solve common Lovable build patterns. Each recipe is a battle-tested pairing — picking from one column in each category gets you a working app instead of a feature graveyard.
-
-### App Connector recipes
-
-- **SaaS Starter** — `⚡ Cloud` + `⚡ Stripe` + `Resend` + `Slack` — Auth + billing + transactional email + team notifications. The default starting point for any subscription app.
-- **BYO Backend SaaS** — `⚡ Supabase` + `⚡ Stripe` + `Resend` + `Inngest` — When you need RLS, real-time, or your own Postgres. Inngest handles the long-running webhook + scheduled jobs the marketing site shouldn't block on.
-- **Headless Ecommerce** — `⚡ Shopify` + `Storyblok` + `Resend` — Shopify owns commerce, Storyblok owns content, Resend handles order/shipping mail. Lovable owns the storefront.
-- **Internal Operations Tool** — `⚡ Supabase` + `Linear` + `Slack` + `Inngest` — Read-write internal dashboards that talk to engineering systems. Linear for tickets, Slack for team comms, Inngest for any scheduled syncing.
-- **AI Agent App** — `⚡ AI` (or `⚡ Cloud` + Anthropic/OpenAI key) + `Perplexity` + `ElevenLabs` + `⚡ Supabase` — LLM reasoning + grounded web search + voice output + persistent memory. The four pillars of a polished consumer agent.
-- **Microsoft 365 Power User Tool** — `Microsoft Outlook` + `Microsoft Excel` + `Microsoft OneDrive` + `Microsoft Teams` — When the deployment context is "everything has to live in our M365 tenant."
-- **Privacy-First Closed Stack** — `⚡ Cloud` + `⚡ AI` — No third-party connector configuration. Useful for first-version internal tools where you haven't decided which external services are in scope yet.
-- **Sales-Ops Dashboard** — `HubSpot` + `Attention` + `Slack` + `⚡ Supabase` — CRM data + call-coaching transcripts + alerts + custom rollups beyond what HubSpot's UI gives you.
-- **Content + Comms Marketing Site** — `Contentful` + `Resend` + `Google Calendar` — Editor-friendly CMS, transactional email, and scheduled events without standing up four separate vendors.
-
-### Chat Connector recipes (build-time MCP)
-
-- **Engineering Build Session** — `Linear` + `Sentry` + `Figma` — Read your actual ticket, see the actual error, see the actual design, write the actual code. The default "I'm building a real feature" stack.
-- **Product-Decision Build Session** — `PostHog` + `Notion` + `Linear` — Ground UI choices in real funnel data, pull the PRD live from Notion, scope against the ticket. Closes the gap between strategy and shipping.
-- **Design-System-Driven Build** — `Figma` + `Sanity` — Components materialize from real Figma layers, populated with real Sanity content schemas. The generated UI matches both the design and the data shape on first pass.
-- **Customer-Voice Build** — `Granola` + `Linear` + `Notion` — What the customer actually said in the call, what the team committed to in Linear, what the spec already says in Notion. The triangle that prevents shipping the wrong feature.
-
-> Stack Recipes are opinion, not Lovable's recommendation. Mix and match — every connector listed below works with every other listed connector.
-
----
-
 ## Contents
 
-### Quick reference
-
 - [Stack Recipes](#stack-recipes)
-
-### App Connectors
-
+- [App Connectors](#app-connectors)
 - [Lovable Native](#lovable-native)
 - [Authentication and Database](#authentication-and-database)
 - [Payments and Commerce](#payments-and-commerce)
@@ -86,9 +39,7 @@ Curated combinations that solve common Lovable build patterns. Each recipe is a 
 - [Security](#security)
 - [Media and Streaming](#media-and-streaming)
 - [Coming Soon](#coming-soon)
-
-### Chat Connectors (MCP)
-
+- [Chat Connectors](#chat-connectors)
 - [Product Analytics](#product-analytics)
 - [Project Management and Knowledge](#project-management-and-knowledge)
 - [A/B Testing and Feature Flags](#ab-testing-and-feature-flags)
@@ -101,41 +52,60 @@ Curated combinations that solve common Lovable build patterns. Each recipe is a 
 - [Error Tracking and Monitoring](#error-tracking-and-monitoring)
 - [Custom MCP Servers](#custom-mcp-servers)
 
-### Other
+## Stack Recipes
 
-- [Contributing](#contributing)
-- [Related](#related)
+Curated combinations that solve common Lovable build patterns. Each recipe is a battle-tested pairing. Mix and match — every connector listed below works with every other listed connector.
 
----
+**SaaS Starter** · `⚡ Cloud` + `⚡ Stripe` + `Resend` + `Slack`. Auth + billing + transactional email + team notifications. The default starting point for any subscription app.
 
-# App Connectors
+**BYO Backend SaaS** · `⚡ Supabase` + `⚡ Stripe` + `Resend` + `Inngest`. When you need RLS, real-time, or your own PostgreSQL. Inngest handles long-running webhooks + scheduled jobs.
+
+**Headless Ecommerce** · `⚡ Shopify` + `Storyblok` + `Resend`. Shopify owns commerce, Storyblok owns content, Resend handles order mail. Lovable owns the storefront.
+
+**Internal Operations Tool** · `⚡ Supabase` + `Linear` + `Slack` + `Inngest`. Read-write internal dashboards that talk to engineering systems.
+
+**AI Agent App** · `⚡ AI` (or `⚡ Cloud` + Anthropic/OpenAI key) + `Perplexity` + `ElevenLabs` + `⚡ Supabase`. LLM reasoning + grounded web search + voice output + persistent memory.
+
+**Microsoft 365 Power User Tool** · `Microsoft Outlook` + `Microsoft Excel` + `Microsoft OneDrive` + `Microsoft Teams`. When everything has to live in the M365 tenant.
+
+**Privacy-First Closed Stack** · `⚡ Cloud` + `⚡ AI`. No third-party connector configuration. Useful for first-version internal tools.
+
+**Sales-Ops Dashboard** · `HubSpot` + `Attention` + `Slack` + `⚡ Supabase`. CRM data + call-coaching transcripts + alerts + custom rollups.
+
+**Content + Comms Marketing Site** · `Contentful` + `Resend` + `Google Calendar`. Editor-friendly CMS, transactional email, and scheduled events.
+
+**Engineering Build Session** (Chat) · `Linear` + `Sentry` + `Figma`. Read your actual ticket, see the actual error, see the actual design, write the actual code.
+
+**Product-Decision Build Session** (Chat) · `PostHog` + `Notion` + `Linear`. Ground UI choices in real funnel data, pull the PRD live from Notion, scope against the ticket.
+
+**Design-System-Driven Build** (Chat) · `Figma` + `Sanity`. Components materialize from real Figma layers, populated with real Sanity content schemas.
+
+**Customer-Voice Build** (Chat) · `Granola` + `Linear` + `Notion`. What the customer said in the call, what the team committed to in Linear, what the spec already says in Notion.
+
+## App Connectors
 
 Workspace-level integrations that the apps you build with Lovable can call at runtime. Configured once by workspace admins.
 
 ## Lovable Native
 
-- ⚡ [Cloud](https://lovable.dev) - Built-in backend, ready to use. *Use case: Standing up a database, auth, and serverless functions inside a Lovable app without provisioning external infrastructure first.*
-- ⚡ [AI](https://lovable.dev) - Unlock powerful AI features inside your generated app. *Use case: Adding chat completions, embeddings, or generative features to a Lovable build without wiring up your own model provider keys.*
-
+- ⚡ [Cloud](https://lovable.dev/cloud) - Built-in backend, ready to use. *Use case: Standing up a database, auth, and serverless functions inside a Lovable app without provisioning external infrastructure first.*
+- ⚡ [AI](https://lovable.dev/ai) - Unlock powerful AI features inside your generated app. *Use case: Adding chat completions, embeddings, or generative features to a Lovable build without wiring up your own model provider keys.*
 
 ## Authentication and Database
 
-- ⚡ [Supabase](https://supabase.com) - Connect your own Supabase project for Postgres, auth, storage, and edge functions. *Use case: Bring-your-own-backend builds that need persistent data, row-level security, real-time subscriptions, or file storage in a Lovable app.*
+- ⚡ [Supabase](https://supabase.com) - Connect your own Supabase project for PostgreSQL, auth, storage, and edge functions. *Use case: Bring-your-own-backend builds that need persistent data, row-level security, real-time subscriptions, or file storage in a Lovable app.*
 - [AWS S3](https://aws.amazon.com/s3/) - Read and write data files in AWS S3 buckets. *Use case: Object storage for user uploads, generated artifacts, or static assets when the app needs S3-grade durability and IAM-scoped access.*
-
 
 ## Payments and Commerce
 
 - ⚡ [Stripe](https://stripe.com) - Set up payments for one-time charges, subscriptions, and marketplaces. *Use case: Adding checkout, subscription billing, customer portals, or usage-based pricing to a Lovable-built SaaS app.*
 - ⚡ [Shopify](https://www.shopify.com) - Build an eCommerce store with Lovable's frontend over Shopify's commerce backend. *Use case: Spinning up a custom storefront, headless checkout, or merchant tooling that reads products, orders, and inventory from a Shopify shop.*
 
-
 ## AI, Voice, and Search
 
 - ⚡ [ElevenLabs](https://elevenlabs.io) - AI voice generation, text-to-speech, and speech-to-text. *Use case: Adding lifelike voiceover, dubbing, or real-time voice agents to a Lovable app — narration, IVR replacements, accessibility readers.*
 - [Gemini Enterprise](https://cloud.google.com/gemini) - Search, query, and summarize data across your Google data sources. *Use case: Grounding answers in Google Workspace + connected data sources for enterprise search and Q&A inside a Lovable app.*
 - [Perplexity](https://www.perplexity.ai) - AI-powered search and answer engine. *Use case: Adding live, citation-grounded web search to an app — research assistants, briefing tools, fact-checking surfaces.*
-
 
 ## Email and Messaging
 
@@ -148,13 +118,11 @@ Workspace-level integrations that the apps you build with Lovable can call at ru
 - [Microsoft Teams](https://www.microsoft.com/en-us/microsoft-teams/group-chat-software) - Send messages and manage channels. *Use case: Posting from a Lovable app to a Teams channel, building enterprise notification flows, or wiring app events into Teams collaboration.*
 - [Twilio](https://www.twilio.com) - Cloud communications platform for SMS, voice, and messaging. *Use case: Sending SMS verifications, programmable voice flows, or WhatsApp messages from a Lovable app.*
 
-
 ## Calendar and Productivity
 
 - [Google Calendar](https://calendar.google.com) - Create and manage Google Calendar events. *Use case: Scheduling features inside a Lovable app — booking flows, automated event creation, calendar-aware automations.*
 - [Microsoft OneNote](https://www.onenote.com) - Read and write notes inside OneNote notebooks. *Use case: Capturing app-generated notes into a user's OneNote, summarizing meetings into a notebook, or syncing structured app data to OneNote pages.*
 - [Granola](https://www.granola.ai) - AI meeting notes and transcripts. *Use case: Pulling meeting transcripts into a Lovable app for summarization, searchable archives, or note-driven action item extraction.*
-
 
 ## Documents and Files
 
@@ -167,13 +135,11 @@ Workspace-level integrations that the apps you build with Lovable can call at ru
 - [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) - Read and write presentations. *Use case: Auto-generated decks from app data in PowerPoint format, templated business presentations, or pulling slide content for processing.*
 - [Microsoft Word](https://www.microsoft.com/en-us/microsoft-365/word) - Read and write Word documents. *Use case: Document generation in `.docx` format — contracts, reports, briefings — and ingestion of user-supplied Word files into a Lovable app.*
 
-
 ## Content Management
 
 - [Contentful](https://www.contentful.com) - Headless CMS for content delivery. *Use case: Powering content-driven Lovable apps (marketing sites, product catalogs, knowledge bases) with editor-friendly Contentful as the source of truth.*
 - [Storyblok](https://www.storyblok.com) - Headless CMS and visual page builder. *Use case: Visual-editor-friendly content management for content-heavy Lovable apps where non-developers will edit copy and layout.*
 - [WordPress.com](https://wordpress.com) - Access your WordPress.com sites, posts, and media. *Use case: Surfacing WordPress.com posts inside a Lovable app, syndicating app-generated content to a WordPress blog, or building authoring tools over an existing WordPress.com site.*
-
 
 ## CRM, Sales, and Recruiting
 
@@ -181,12 +147,10 @@ Workspace-level integrations that the apps you build with Lovable can call at ru
 - [Attention](https://www.attention.com) - Sales conversation intelligence and coaching API. *Use case: Pulling sales-call transcripts and coaching scorecards into a custom revenue dashboard, or surfacing conversation insights inside a sales-ops Lovable app.*
 - [HubSpot](https://www.hubspot.com) - CRM platform for sales, marketing, and customer service. *Use case: Reading and writing CRM records — contacts, deals, tasks — from a Lovable app to extend HubSpot with custom workflows or internal tooling.*
 
-
 ## Project Management
 
 - [Asana](https://asana.com) - Work management platform for tasks, projects, and teams. *Use case: Surfacing project state inside an internal tool, creating tasks from app events, or building bespoke views over Asana data.*
 - [Linear](https://linear.app) - Project management and issue tracking for software teams. *Use case: Engineering dashboards, custom triage views, or wiring app events into Linear issues from a Lovable app.*
-
 
 ## Data and Analytics
 
@@ -195,41 +159,32 @@ Workspace-level integrations that the apps you build with Lovable can call at ru
 - [Databricks](https://www.databricks.com) - Unified analytics and AI platform. *Use case: Surfacing notebook-driven models, lakehouse query results, or ML pipeline output inside a Lovable app for non-technical users.*
 - [Snowflake](https://www.snowflake.com) - Cloud data platform for analytics and AI. *Use case: Building customer-facing analytics, internal BI tools, or data-product surfaces over a Snowflake account from a Lovable app.*
 
-
 ## Web Scraping
 
 - [Firecrawl](https://www.firecrawl.dev) - AI-powered scraper, search, and retrieval tool. *Use case: Crawling sites, extracting structured data from web pages, or building search-augmented Lovable apps that need fresh page content.*
-
 
 ## Meeting Intelligence
 
 - [Fireflies](https://fireflies.ai) - Meeting transcription and conversation intelligence. *Use case: Pulling meeting transcripts into a Lovable app for summarization, action-item extraction, or building a searchable meeting archive.*
 
-
 ## Workflow Automation
 
 - [Inngest](https://www.inngest.com) - Event-driven durable functions, background jobs, and workflows. *Use case: Long-running background work — webhooks, scheduled jobs, multi-step workflows — that the Lovable app frontend triggers but shouldn't block on.*
-
 
 ## Security
 
 - [Aikido](https://www.aikido.dev) - AI-powered security scanning and pentesting. *Use case: Embedding security findings (SAST, DAST, container scans, AI pentests) in an internal security dashboard built with Lovable, or routing Aikido alerts into custom triage flows.*
 - [Wiz](https://www.wiz.io) - Cloud security platform and posture management. *Use case: Surfacing cloud-security posture findings, attack-path graphs, or compliance state inside a Lovable-built executive or platform-engineering dashboard.*
 
-
 ## Media and Streaming
 
 - [Twitch](https://www.twitch.tv) - Live streaming platform for gaming and creative content. *Use case: Building creator-tools, channel-overlay apps, or stream-state dashboards on top of a streamer's Twitch account.*
-
 
 ## Coming Soon
 
 - 🔜 [Google Search Console](https://search.google.com/search-console) - Read search analytics and manage sites in Google Search Console. *Use case: SEO analytics dashboards, content-performance views, or surfacing indexing state inside a marketing-ops Lovable app.*
 
-
----
-
-# Chat Connectors (MCP)
+## Chat Connectors
 
 MCP servers attached to your Lovable build session. Add live context while you build — only available to you, not to the apps you ship.
 
@@ -239,83 +194,50 @@ MCP servers attached to your Lovable build session. Add live context while you b
 - [Hex](https://hex.tech) - Access your Hex data notebooks and projects. *Use case: Pulling notebook-derived metrics or query results into a Lovable build session to inform what you're shipping.*
 - [PostHog](https://posthog.com) - Access your PostHog analytics, feature flags, and experiments. *Use case: Letting the chat surface reference event volume, funnel drop-offs, or active experiments while you iterate on the product.*
 
-
 ## Project Management and Knowledge
 
 - [Atlassian](https://www.atlassian.com) - Access your Jira issues and Confluence pages. *Use case: Grounding what you build in real Jira ticket scope or Confluence specs without copy-pasting requirements into chat.*
-- [Linear](https://linear.app) - Access your Linear issues and project data. *Use case: Asking the chat surface to read the actual ticket you're working from, including comments and acceptance criteria, while you build.*
+- [Linear (Chat)](https://developers.linear.app) - Access your Linear issues and project data. *Use case: Asking the chat surface to read the actual ticket you're working from, including comments and acceptance criteria, while you build.*
 - [Notion](https://www.notion.so) - Access your Notion pages and databases. *Use case: Pulling design briefs, PRDs, or roadmap pages from Notion into a build session — the spec stays in Notion, the implementation reads it live.*
-
 
 ## A/B Testing and Feature Flags
 
-- [Confidence Exp](https://confidence.spotify.com) - Analyze your Confidence A/B tests and rollouts. *Use case: Letting Lovable read live experiment results from Spotify's open Confidence platform when building variants or rollout-aware UI.*
-- [Confidence Flags](https://confidence.spotify.com) - Create, modify, and manage your Confidence feature flags. *Use case: Wiring new code paths to Confidence feature flags during the build itself — no separate console-tabbing to set up flag rules.*
-
+- [Confidence Exp](https://confidence.spotify.com/experiments) - Analyze your Confidence A/B tests and rollouts. *Use case: Letting Lovable read live experiment results from Spotify's open Confidence platform when building variants or rollout-aware UI.*
+- [Confidence Flags](https://confidence.spotify.com/flags) - Create, modify, and manage your Confidence feature flags. *Use case: Wiring new code paths to Confidence feature flags during the build itself — no separate console-tabbing to set up flag rules.*
 
 ## Design and Whiteboarding
 
 - [Figma](https://www.figma.com) - Use Figma's local MCP server from Figma Desktop on your machine. *Use case: Generating components from a Figma file's actual layers, tokens, and styles instead of describing the design in prose.*
 - [Miro](https://miro.com) - Access your Miro boards and diagrams. *Use case: Reading product flows or system diagrams off a Miro board into the build context — architecture-aware code generation grounded in the team's whiteboard.*
 
-
 ## Content Management (Chat)
 
 - [Sanity](https://www.sanity.io) - Access your Sanity content management. *Use case: Reading actual content schemas and entries from a Sanity project so generated UI matches the real data shape, not a guessed one.*
 
-
 ## Meeting Intelligence (Chat)
 
-- [Granola](https://www.granola.ai) - Access your meeting notes and transcripts. *Use case: Pulling decisions, follow-ups, or quotes from a recent customer call directly into the build session — what got asked for in the meeting becomes input to what you ship.*
-
+- [Granola (Chat)](https://docs.granola.ai) - Access your meeting notes and transcripts. *Use case: Pulling decisions, follow-ups, or quotes from a recent customer call directly into the build session — what got asked for in the meeting becomes input to what you ship.*
 
 ## AI Video
 
 - [HeyGen](https://www.heygen.com) - Create AI videos, avatars, and translate content. *Use case: Generating product demo videos, localized voiceovers, or avatar-driven walkthroughs as part of the build session — marketing assets that ship with the app.*
 
-
 ## Workflow Automation (Chat)
 
 - [n8n](https://n8n.io) - Access and power your apps with your n8n workflows. *Use case: Letting the chat surface read or trigger n8n workflows during the build — the workflow engine stays in n8n, Lovable wires app actions to it.*
-
 
 ## Billing (Chat)
 
 - [Polar](https://polar.sh) - Set up subscription billing. *Use case: Wiring digital-product or subscription billing into a Lovable app via Polar's open-source merchant-of-record platform — pricing, checkout, and access management without rolling your own billing.*
 
-
 ## Error Tracking and Monitoring
 
 - [Sentry](https://sentry.io) - Access your Sentry issues, errors, and project insights. *Use case: Reading live production errors into the build session so the next iteration fixes what's actually breaking, not what you remember last seeing.*
-
 
 ## Custom MCP Servers
 
 Lovable's chat surface includes a **New MCP server** entry — connect any custom MCP-compliant server to add your own context source to the build session. See the [Model Context Protocol specification](https://modelcontextprotocol.io) for building or hosting your own.
 
-
----
-
 ## Contributing
 
 Contributions are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) for the submission flow, surface conventions (App vs Chat), and the entry style guide. By contributing you agree to the [Code of Conduct](code-of-conduct.md).
-
-## Related
-
-- [Awesome List for Claude Connectors](https://github.com/rdmgator12/awesome-claude-connectors) — Sister directory tracking Anthropic's official Claude Connectors Directory.
-- [Awesome Perplexity Connectors](https://github.com/rdmgator12/Perplexity-Connectors-awesome-list-) — Sister directory tracking Perplexity's Computer connector surface.
-- [Awesome ChatGPT Apps](https://github.com/rdmgator12/Chtgpt-Apps-Awesome-List) — Sister directory tracking ChatGPT's app surface.
-- [Awesome Gemini Extensions](https://github.com/rdmgator12/Gemini-Awesome-List-) — Sister directory tracking Google Gemini's official extensions.
-- [Awesome Mistral Connectors](https://github.com/rdmgator12/awesome-mistral-connectors) — Sister directory tracking Mistral's Le Chat Connectors and Agents API.
-- [Awesome LM Studio Connectors](https://github.com/rdmgator12/awesome-lm-studio-connectors) — Sister directory tracking LM Studio's local-first MCP integrations.
-- [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers) — Broader directory of all known Model Context Protocol servers (not limited to any vendor's curated directory).
-- [Lovable Documentation](https://docs.lovable.dev) — Official documentation.
-- [Lovable Homepage](https://lovable.dev) — Vendor homepage.
-
----
-
-## License
-
-[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
-
-To the extent possible under law, [Ralph D. Martello](https://github.com/rdmgator12) has waived all copyright and related or neighboring rights to this work.
