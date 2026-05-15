@@ -6,10 +6,27 @@ All notable changes to this list will be documented in this file. Format follows
 
 ### Planned for v1.1.0
 - Track Lovable's enterprise / paid-tier connector surface as it diverges from the public directory.
-- Add `awesome-lint` to CI once the repo is ≥30 days old (lint blocks submissions on `git-repo-age` until 2026-06-09).
 - Field reports for the most-used App Connectors (Supabase, Stripe, Resend) and most-used Chat Connectors (Figma, Sentry, Linear).
 - Reciprocal sister-list backlinks once published.
 - Per-recipe build templates linked from Stack Recipes (one starter project per recipe).
+- Add a "Lovable as MCP" section covering Lovable's outbound MCP server (`https://mcp.lovable.dev`) — distinct from the inbound chat-connector surface; lets external agents drive Lovable. Research preview as of May 7, 2026.
+
+---
+
+## [1.0.2] — 2026-05-15
+
+### Added
+- **Email and Messaging:** Mailgun — transactional email API with domain verification and delivery tracking. Confirmed live in workspace App Connectors directory; tied to Sinch–Lovable strategic partnership announced February 2026.
+- **Content Management:** Notion (App) — runtime read/write to Notion pages and databases from a deployed app. Listed as `Notion (App)` to distinguish from the chat-side Notion entry which only reads context during build; URLs differ (`notion.so/product` vs `notion.so`) to satisfy awesome-lint double-link rule.
+- **Coming Soon:** Semrush — SEO, keyword research, and competitive analysis platform.
+
+### Changed
+- **Data and Analytics:** Google Search Console moved out of Coming Soon — now generally available as a default-enabled App Connector. Re-listed under Data and Analytics; `🔜` marker dropped.
+- Header counts: App Connectors 47 → 50, version 1.0.1 → 1.0.2.
+
+### Notes
+- Chat Connectors surface: no changes this week. Live in-product directory verified all 16 entries unchanged.
+- Lovable MCP server (research preview, May 7, 2026) is **not** added here — it's outbound (Lovable as MCP server for external agents), not inbound (third-party tools providing context). Held for v1.1.0 in a dedicated section.
 
 ---
 
@@ -39,6 +56,7 @@ Lovable Native · Authentication and Database · Payments and Commerce · AI, Vo
 ### Categories — Chat Connectors (MCP)
 Product Analytics · Project Management and Knowledge · A/B Testing and Feature Flags · Design and Whiteboarding · Content Management · Meeting Intelligence · AI Video · Workflow Automation · Billing · Error Tracking and Monitoring · Custom MCP Servers.
 
-[Unreleased]: https://github.com/rdmgator12/awesome-lovable-connectors/compare/v1.0.1...HEAD
+[Unreleased]: https://github.com/rdmgator12/awesome-lovable-connectors/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/rdmgator12/awesome-lovable-connectors/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/rdmgator12/awesome-lovable-connectors/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/rdmgator12/awesome-lovable-connectors/releases/tag/v1.0.0

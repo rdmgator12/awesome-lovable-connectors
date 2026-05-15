@@ -6,7 +6,7 @@
 
 > A curated directory of every connector available across [Lovable's](https://lovable.dev) two integration surfaces — **App Connectors** (services your built apps can read from and act on) and **Chat Connectors** (MCP servers that add context while you build).
 
-**Last updated:** May 10, 2026 · **App Connectors:** 47 · **Chat Connectors:** 16 · **Categories:** 27 · **Version:** 1.0.1
+**Last updated:** May 15, 2026 · **App Connectors:** 50 · **Chat Connectors:** 16 · **Categories:** 27 · **Version:** 1.0.2
 
 Lovable exposes integrations through two distinct surfaces. **App Connectors** are workspace-scoped integrations that your generated app can call at runtime — configured once by workspace admins, available to any app built in the workspace, powering backend, payments, email, file storage, CRM, analytics, and more. **Chat Connectors** are MCP (Model Context Protocol) servers attached to *your* build session, not the app you ship — they give Lovable's chat surface live context from product analytics, design files, error trackers, project management, and feature-flag platforms while you iterate.
 
@@ -111,6 +111,7 @@ Workspace-level integrations that the apps you build with Lovable can call at ru
 
 - [Brevo](https://www.brevo.com) - Email, SMS, CRM, and marketing automation API. *Use case: Sending transactional and marketing email, SMS campaigns, or running CRM-style workflows from a Lovable app without standing up multiple vendors.*
 - [Gmail](https://mail.google.com) - Read, send, and manage emails. *Use case: Sending notifications from a personal Gmail account, drafting replies from app context, or building inbox-aware tooling on top of a user's Google account.*
+- [Mailgun](https://www.mailgun.com) - Transactional email API with domain verification and delivery tracking. *Use case: Sending verifications, receipts, and notifications from a verified domain with bounce/complaint tracking — the production path when Lovable's built-in email isn't enough.*
 - [Microsoft Outlook](https://outlook.com) - Read, send, and manage emails on Microsoft 365. *Use case: Email automation in Microsoft-shop environments, drafting replies, or scanning a user's mailbox for context inside a Lovable app.*
 - [Resend](https://resend.com) - Email API for developers. *Use case: Transactional email (verification, password reset, receipts) with React Email templates and developer-grade deliverability.*
 - [Slack](https://slack.com) - Send messages and interact with Slack workspaces. *Use case: Posting notifications from a Lovable app to a team channel, building Slack-first tools, or triggering app actions from Slack messages.*
@@ -138,6 +139,7 @@ Workspace-level integrations that the apps you build with Lovable can call at ru
 ## Content Management
 
 - [Contentful](https://www.contentful.com) - Headless CMS for content delivery. *Use case: Powering content-driven Lovable apps (marketing sites, product catalogs, knowledge bases) with editor-friendly Contentful as the source of truth.*
+- [Notion (App)](https://www.notion.so/product) - Read and write Notion pages and databases from your app. *Use case: Knowledge-base-driven apps, internal wikis, or runtime content sourced from a team's Notion workspace — distinct from the chat-side Notion connector that only reads context during build.*
 - [Storyblok](https://www.storyblok.com) - Headless CMS and visual page builder. *Use case: Visual-editor-friendly content management for content-heavy Lovable apps where non-developers will edit copy and layout.*
 - [WordPress.com](https://wordpress.com) - Access your WordPress.com sites, posts, and media. *Use case: Surfacing WordPress.com posts inside a Lovable app, syndicating app-generated content to a WordPress blog, or building authoring tools over an existing WordPress.com site.*
 
@@ -155,6 +157,7 @@ Workspace-level integrations that the apps you build with Lovable can call at ru
 ## Data and Analytics
 
 - [Airtable](https://airtable.com) - Spreadsheet-database hybrid and automation platform. *Use case: Using Airtable as a friendly backend for low-to-medium-scale apps where non-developers will edit underlying records.*
+- [Google Search Console](https://search.google.com/search-console) - Read search analytics and manage sites in Google Search Console. *Use case: SEO analytics dashboards, content-performance views, or surfacing indexing state inside a marketing-ops Lovable app.*
 - [BigQuery](https://cloud.google.com/bigquery) - Query and analyze data in BigQuery. *Use case: Powering analytics dashboards or AI features over warehouse-scale data without standing up a separate query layer.*
 - [Databricks](https://www.databricks.com) - Unified analytics and AI platform. *Use case: Surfacing notebook-driven models, lakehouse query results, or ML pipeline output inside a Lovable app for non-technical users.*
 - [Snowflake](https://www.snowflake.com) - Cloud data platform for analytics and AI. *Use case: Building customer-facing analytics, internal BI tools, or data-product surfaces over a Snowflake account from a Lovable app.*
@@ -182,7 +185,7 @@ Workspace-level integrations that the apps you build with Lovable can call at ru
 
 ## Coming Soon
 
-- 🔜 [Google Search Console](https://search.google.com/search-console) - Read search analytics and manage sites in Google Search Console. *Use case: SEO analytics dashboards, content-performance views, or surfacing indexing state inside a marketing-ops Lovable app.*
+- 🔜 [Semrush](https://www.semrush.com) - SEO, keyword research, and competitive analysis platform. *Use case: SEO and keyword-research dashboards, competitive analysis surfaces, or content-strategy tooling backed by Semrush data inside a Lovable app.*
 
 ## Chat Connectors
 
