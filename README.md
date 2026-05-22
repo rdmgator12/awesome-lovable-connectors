@@ -6,7 +6,7 @@
 
 > A curated directory of every connector available across [Lovable's](https://lovable.dev) two integration surfaces — **App Connectors** (services your built apps can read from and act on) and **Chat Connectors** (MCP servers that add context while you build).
 
-**Last updated:** May 15, 2026 · **App Connectors:** 50 · **Chat Connectors:** 16 · **Categories:** 27 · **Version:** 1.0.2
+**Last updated:** May 22, 2026 · **App Connectors:** 52 · **Chat Connectors:** 16 · **Categories:** 27 · **Version:** 1.0.3
 
 Lovable exposes integrations through two distinct surfaces. **App Connectors** are workspace-scoped integrations that your generated app can call at runtime — configured once by workspace admins, available to any app built in the workspace, powering backend, payments, email, file storage, CRM, analytics, and more. **Chat Connectors** are MCP (Model Context Protocol) servers attached to *your* build session, not the app you ship — they give Lovable's chat surface live context from product analytics, design files, error trackers, project management, and feature-flag platforms while you iterate.
 
@@ -34,11 +34,11 @@ This list tracks both surfaces as visible in the Lovable in-product directory on
 - [Project Management](#project-management)
 - [Data and Analytics](#data-and-analytics)
 - [Web Scraping](#web-scraping)
+- [Maps and Location](#maps-and-location)
 - [Meeting Intelligence](#meeting-intelligence)
 - [Workflow Automation](#workflow-automation)
 - [Security](#security)
 - [Media and Streaming](#media-and-streaming)
-- [Coming Soon](#coming-soon)
 - [Chat Connectors](#chat-connectors)
 - [Product Analytics](#product-analytics)
 - [Project Management and Knowledge](#project-management-and-knowledge)
@@ -160,11 +160,16 @@ Workspace-level integrations that the apps you build with Lovable can call at ru
 - [Google Search Console](https://search.google.com/search-console) - Read search analytics and manage sites in Google Search Console. *Use case: SEO analytics dashboards, content-performance views, or surfacing indexing state inside a marketing-ops Lovable app.*
 - [BigQuery](https://cloud.google.com/bigquery) - Query and analyze data in BigQuery. *Use case: Powering analytics dashboards or AI features over warehouse-scale data without standing up a separate query layer.*
 - [Databricks](https://www.databricks.com) - Unified analytics and AI platform. *Use case: Surfacing notebook-driven models, lakehouse query results, or ML pipeline output inside a Lovable app for non-technical users.*
+- [Semrush](https://www.semrush.com) - Keyword research, domain analytics, backlinks, paid-search data, and position tracking. *Use case: SEO dashboards, keyword-research tools, competitor tracking, backlink monitoring, or client-facing search-performance reports inside a Lovable app.*
 - [Snowflake](https://www.snowflake.com) - Cloud data platform for analytics and AI. *Use case: Building customer-facing analytics, internal BI tools, or data-product surfaces over a Snowflake account from a Lovable app.*
 
 ## Web Scraping
 
 - [Firecrawl](https://www.firecrawl.dev) - AI-powered scraper, search, and retrieval tool. *Use case: Crawling sites, extracting structured data from web pages, or building search-augmented Lovable apps that need fresh page content.*
+
+## Maps and Location
+
+- [Google Maps Platform](https://mapsplatform.google.com) - Geocoding, routes, places, embedded maps, address validation, weather, and air quality APIs. *Use case: Adding map-driven features to a Lovable app — store locators, route planning, address autocomplete, location-aware automations, or geospatial dashboards. Managed by Lovable or BYO Google Cloud credentials.*
 
 ## Meeting Intelligence
 
@@ -181,11 +186,8 @@ Workspace-level integrations that the apps you build with Lovable can call at ru
 
 ## Media and Streaming
 
+- [TikTok](https://www.tiktok.com) - Read profile information, follower counts, like counts, video statistics, and published video metadata. *Use case: Creator-analytics dashboards, social-listening tools, or campaign-reporting surfaces that ingest TikTok account data into a Lovable app — read-only, no publishing.*
 - [Twitch](https://www.twitch.tv) - Live streaming platform for gaming and creative content. *Use case: Building creator-tools, channel-overlay apps, or stream-state dashboards on top of a streamer's Twitch account.*
-
-## Coming Soon
-
-- 🔜 [Semrush](https://www.semrush.com) - SEO, keyword research, and competitive analysis platform. *Use case: SEO and keyword-research dashboards, competitive analysis surfaces, or content-strategy tooling backed by Semrush data inside a Lovable app.*
 
 ## Chat Connectors
 

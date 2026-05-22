@@ -13,6 +13,25 @@ All notable changes to this list will be documented in this file. Format follows
 
 ---
 
+## [1.0.3] — 2026-05-22
+
+### Added
+- **Maps and Location** (new category): Google Maps Platform — geocoding, routes, places, embedded maps, address validation, weather, and air quality APIs. Workspace admins can choose Managed by Lovable or BYO Google Cloud credentials. Confirmed live in Lovable's published changelog 2026-05-22.
+- **Media and Streaming:** TikTok — read profile information, follower counts, like counts, video statistics, and published video metadata. Read-only connector; does not support publishing to TikTok.
+
+### Changed
+- **Semrush** graduated from Coming Soon → **Data and Analytics**. 🔜 marker dropped. Same `semrush.com` URL retained; description rewritten to match the GA capability surface (keyword research, domain analytics, backlinks, paid-search data, position tracking) per Lovable's 2026-05-22 changelog entry and the May 13 Lovable × Semrush partnership announcement.
+- Coming Soon section removed from README and Contents TOC — currently no 🔜 entries in the in-product directory. 🔜 legend marker retained for future weeks.
+- Header counts: App Connectors 50 → 52, version 1.0.2 → 1.0.3.
+
+### Notes
+- Chat Connectors surface: no changes this week. 16 entries unchanged.
+- Lovable MCP server (research preview, May 7, 2026) still **not** added — outbound (Lovable as MCP server for external agents), not inbound (third-party context into Lovable's chat). Held for v1.1.0 in a dedicated section.
+- "Chat with Lovable in Telegram" (Settings → Devices & apps) is Lovable-as-Telegram-bot, not Telegram as a new connector — Telegram already listed as an App Connector since v1.0.0. No change.
+- Net category count unchanged at 27 (17 App + 10 Chat): −Coming Soon, +Maps and Location.
+
+---
+
 ## [1.0.2] — 2026-05-15
 
 ### Added
@@ -56,7 +75,8 @@ Lovable Native · Authentication and Database · Payments and Commerce · AI, Vo
 ### Categories — Chat Connectors (MCP)
 Product Analytics · Project Management and Knowledge · A/B Testing and Feature Flags · Design and Whiteboarding · Content Management · Meeting Intelligence · AI Video · Workflow Automation · Billing · Error Tracking and Monitoring · Custom MCP Servers.
 
-[Unreleased]: https://github.com/rdmgator12/awesome-lovable-connectors/compare/v1.0.2...HEAD
+[Unreleased]: https://github.com/rdmgator12/awesome-lovable-connectors/compare/v1.0.3...HEAD
+[1.0.3]: https://github.com/rdmgator12/awesome-lovable-connectors/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/rdmgator12/awesome-lovable-connectors/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/rdmgator12/awesome-lovable-connectors/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/rdmgator12/awesome-lovable-connectors/releases/tag/v1.0.0
