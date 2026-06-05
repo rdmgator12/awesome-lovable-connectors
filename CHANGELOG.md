@@ -4,12 +4,30 @@ All notable changes to this list will be documented in this file. Format follows
 
 ## [Unreleased]
 
-### Planned for v1.1.0
+### Planned for v1.2.0
 - Track Lovable's enterprise / paid-tier connector surface as it diverges from the public directory.
 - Field reports for the most-used App Connectors (Supabase, Stripe, Resend) and most-used Chat Connectors (Figma, Sentry, Linear).
 - Reciprocal sister-list backlinks once published.
 - Per-recipe build templates linked from Stack Recipes (one starter project per recipe).
 - Add a "Lovable as MCP" section covering Lovable's outbound MCP server (`https://mcp.lovable.dev`) — distinct from the inbound chat-connector surface; lets external agents drive Lovable. Research preview as of May 7, 2026.
+
+---
+
+## [1.1.0] — 2026-06-05
+
+### Added
+- **AI, Voice, and Search:** Algolia — AI-powered search and discovery platform with hybrid keyword/vector search and ranking. Sorts first in the section (before the default-enabled ElevenLabs); section ordering is alphabetical on entry name, not default-first.
+- **AI, Voice, and Search:** Replicate — cloud API for running, fine-tuning, and deploying open-source and custom AI models.
+- **Documents and Files:** Microsoft SharePoint — Microsoft 365 content management and document storage platform with secure file sharing. Listed within the Microsoft block between PowerPoint and Word.
+
+### Changed
+- Header counts: App Connectors 52 → 55, version 1.0.3 → 1.1.0.
+
+### Notes
+- Full reconcile against the official Lovable in-product directory diff — +3 App Connectors, all in existing categories.
+- Chat Connectors surface: no changes this week. 16 entries unchanged.
+- Net category count unchanged at 27 (17 App + 10 Chat) — both target categories already existed.
+- The v1.1.0 milestone previously reserved in [Unreleased] (enterprise surface, field reports, sister-list backlinks, per-recipe templates, "Lovable as MCP" section) has been renumbered to v1.2.0; this release consumes 1.1.0 for the weekly directory reconcile per the documented SemVer rule (MINOR for connector additions).
 
 ---
 
@@ -75,7 +93,8 @@ Lovable Native · Authentication and Database · Payments and Commerce · AI, Vo
 ### Categories — Chat Connectors (MCP)
 Product Analytics · Project Management and Knowledge · A/B Testing and Feature Flags · Design and Whiteboarding · Content Management · Meeting Intelligence · AI Video · Workflow Automation · Billing · Error Tracking and Monitoring · Custom MCP Servers.
 
-[Unreleased]: https://github.com/rdmgator12/awesome-lovable-connectors/compare/v1.0.3...HEAD
+[Unreleased]: https://github.com/rdmgator12/awesome-lovable-connectors/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/rdmgator12/awesome-lovable-connectors/compare/v1.0.3...v1.1.0
 [1.0.3]: https://github.com/rdmgator12/awesome-lovable-connectors/compare/v1.0.2...v1.0.3
 [1.0.2]: https://github.com/rdmgator12/awesome-lovable-connectors/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/rdmgator12/awesome-lovable-connectors/compare/v1.0.0...v1.0.1

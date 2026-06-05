@@ -6,7 +6,7 @@
 
 > A curated directory of every connector available across [Lovable's](https://lovable.dev) two integration surfaces — **App Connectors** (services your built apps can read from and act on) and **Chat Connectors** (MCP servers that add context while you build).
 
-**Last updated:** May 22, 2026 · **App Connectors:** 52 · **Chat Connectors:** 16 · **Categories:** 27 · **Version:** 1.0.3
+**Last updated:** June 5, 2026 · **App Connectors:** 55 · **Chat Connectors:** 16 · **Categories:** 27 · **Version:** 1.1.0
 
 Lovable exposes integrations through two distinct surfaces. **App Connectors** are workspace-scoped integrations that your generated app can call at runtime — configured once by workspace admins, available to any app built in the workspace, powering backend, payments, email, file storage, CRM, analytics, and more. **Chat Connectors** are MCP (Model Context Protocol) servers attached to *your* build session, not the app you ship — they give Lovable's chat surface live context from product analytics, design files, error trackers, project management, and feature-flag platforms while you iterate.
 
@@ -103,9 +103,11 @@ Workspace-level integrations that the apps you build with Lovable can call at ru
 
 ## AI, Voice, and Search
 
+- [Algolia](https://www.algolia.com) - AI-powered search and discovery platform with hybrid keyword/vector search and ranking. *Use case: Adding fast, typo-tolerant instant search and AI-ranked results to a Lovable-built catalog, docs site, or marketplace, or powering RAG-style conversational answers from indexed content.*
 - ⚡ [ElevenLabs](https://elevenlabs.io) - AI voice generation, text-to-speech, and speech-to-text. *Use case: Adding lifelike voiceover, dubbing, or real-time voice agents to a Lovable app — narration, IVR replacements, accessibility readers.*
 - [Gemini Enterprise](https://cloud.google.com/gemini) - Search, query, and summarize data across your Google data sources. *Use case: Grounding answers in Google Workspace + connected data sources for enterprise search and Q&A inside a Lovable app.*
 - [Perplexity](https://www.perplexity.ai) - AI-powered search and answer engine. *Use case: Adding live, citation-grounded web search to an app — research assistants, briefing tools, fact-checking surfaces.*
+- [Replicate](https://replicate.com) - Cloud API for running, fine-tuning, and deploying open-source and custom AI models. *Use case: Calling image, audio, or language models from a Lovable app (image generation, transcription, fine-tuned inference) without managing your own GPU infrastructure.*
 
 ## Email and Messaging
 
@@ -134,6 +136,7 @@ Workspace-level integrations that the apps you build with Lovable can call at ru
 - [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel) - Read and write spreadsheets. *Use case: Microsoft 365 spreadsheet automation — exporting app data to Excel, ingesting Excel-shaped data sources, or driving dashboards from Lovable apps.*
 - [Microsoft OneDrive](https://onedrive.live.com) - Upload and read files in OneDrive. *Use case: File storage for Microsoft-shop deployments, document ingestion from a user's OneDrive, or syncing app outputs to OneDrive folders.*
 - [Microsoft PowerPoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint) - Read and write presentations. *Use case: Auto-generated decks from app data in PowerPoint format, templated business presentations, or pulling slide content for processing.*
+- [Microsoft SharePoint](https://www.microsoft.com/en-us/microsoft-365/sharepoint/collaboration) - Microsoft 365 content management and document storage platform with secure file sharing. *Use case: Reading, syncing, or surfacing SharePoint documents and lists inside a Lovable internal portal, or letting users upload and retrieve files against an organization's existing SharePoint libraries.*
 - [Microsoft Word](https://www.microsoft.com/en-us/microsoft-365/word) - Read and write Word documents. *Use case: Document generation in `.docx` format — contracts, reports, briefings — and ingestion of user-supplied Word files into a Lovable app.*
 
 ## Content Management
