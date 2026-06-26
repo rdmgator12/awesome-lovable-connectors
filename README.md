@@ -6,7 +6,7 @@
 
 > A curated directory of every connector available across [Lovable's](https://lovable.dev) two integration surfaces — **App Connectors** (services your built apps can read from and act on) and **Chat Connectors** (MCP servers that add context while you build).
 
-**Last updated:** June 5, 2026 · **App Connectors:** 55 · **Chat Connectors:** 16 · **Categories:** 27 · **Version:** 1.1.0
+**Last updated:** June 26, 2026 · **App Connectors:** 57 · **Chat Connectors:** 16 · **Categories:** 27 · **Version:** 1.2.0
 
 Lovable exposes integrations through two distinct surfaces. **App Connectors** are workspace-scoped integrations that your generated app can call at runtime — configured once by workspace admins, available to any app built in the workspace, powering backend, payments, email, file storage, CRM, analytics, and more. **Chat Connectors** are MCP (Model Context Protocol) servers attached to *your* build session, not the app you ship — they give Lovable's chat surface live context from product analytics, design files, error trackers, project management, and feature-flag platforms while you iterate.
 
@@ -151,6 +151,7 @@ Workspace-level integrations that the apps you build with Lovable can call at ru
 - [Ashby](https://www.ashbyhq.com) - Recruiting and applicant tracking system. *Use case: Custom recruiter dashboards, candidate pipeline views, or interviewer-feedback tools built on top of a company's Ashby ATS.*
 - [Attention](https://www.attention.com) - Sales conversation intelligence and coaching API. *Use case: Pulling sales-call transcripts and coaching scorecards into a custom revenue dashboard, or surfacing conversation insights inside a sales-ops Lovable app.*
 - [HubSpot](https://www.hubspot.com) - CRM platform for sales, marketing, and customer service. *Use case: Reading and writing CRM records — contacts, deals, tasks — from a Lovable app to extend HubSpot with custom workflows or internal tooling.*
+- [Salesforce](https://www.salesforce.com) - CRM platform for sales, service, and marketing. *Use case: Reading and writing Salesforce records — accounts, opportunities, cases — from a Lovable app to build custom CRM dashboards, internal sales tooling, or customer portals over an organization's Salesforce data.*
 
 ## Project Management
 
@@ -189,6 +190,7 @@ Workspace-level integrations that the apps you build with Lovable can call at ru
 
 ## Media and Streaming
 
+- [LinkedIn](https://www.linkedin.com) - Read profile data and publish posts through LinkedIn's API. *Use case: Building a social-publishing tool that posts updates to LinkedIn from a Lovable app, or surfacing a user's profile and post metrics in a personal-brand or recruiting dashboard.*
 - [TikTok](https://www.tiktok.com) - Read profile information, follower counts, like counts, video statistics, and published video metadata. *Use case: Creator-analytics dashboards, social-listening tools, or campaign-reporting surfaces that ingest TikTok account data into a Lovable app — read-only, no publishing.*
 - [Twitch](https://www.twitch.tv) - Live streaming platform for gaming and creative content. *Use case: Building creator-tools, channel-overlay apps, or stream-state dashboards on top of a streamer's Twitch account.*
 

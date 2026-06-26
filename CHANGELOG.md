@@ -4,12 +4,29 @@ All notable changes to this list will be documented in this file. Format follows
 
 ## [Unreleased]
 
-### Planned for v1.2.0
+### Planned for v1.3.0
 - Track Lovable's enterprise / paid-tier connector surface as it diverges from the public directory.
 - Field reports for the most-used App Connectors (Supabase, Stripe, Resend) and most-used Chat Connectors (Figma, Sentry, Linear).
 - Reciprocal sister-list backlinks once published.
 - Per-recipe build templates linked from Stack Recipes (one starter project per recipe).
 - Add a "Lovable as MCP" section covering Lovable's outbound MCP server (`https://mcp.lovable.dev`) — distinct from the inbound chat-connector surface; lets external agents drive Lovable. Research preview as of May 7, 2026.
+
+---
+
+## [1.2.0] — 2026-06-26
+
+### Added
+- **Media and Streaming:** LinkedIn — read profile data and publish posts through LinkedIn's API. App Connector; sorts first in the section (before TikTok and Twitch). Missed in the June 5 pass — announced alongside Algolia and SharePoint in Lovable's May 28 "New App Connectors" post.
+- **CRM, Sales, and Recruiting:** Salesforce — CRM platform for sales, service, and marketing. Listed after HubSpot.
+
+### Changed
+- Header counts: App Connectors 55 → 57, version 1.1.0 → 1.2.0.
+
+### Notes
+- Full reconcile against the official Lovable connector directory (lovable.dev/connect) — +2 App Connectors, both in existing categories.
+- Chat Connectors surface: no changes this week. 16 entries unchanged.
+- Net category count unchanged at 27 (17 App + 10 Chat) — both target categories already existed.
+- The v1.2.0 milestone previously reserved in [Unreleased] (enterprise surface, field reports, sister-list backlinks, per-recipe templates, "Lovable as MCP" section) has been renumbered to v1.3.0; this release consumes 1.2.0 for the weekly directory reconcile per the documented SemVer rule (MINOR for connector additions).
 
 ---
 
